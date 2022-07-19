@@ -70,9 +70,8 @@ Stack Management--->index Patterns 如果index生成后，通过index pattern，
 * packetbeat收集了monogdb返回流量，可能造成内存占用过高，可注释packetbeat相关代码(opReplyParse函数)解决该问题
   或者可通过只采集请求流量规避该问题
 * mongodb msg 无法正常展示：
-mongodb 在3.6版本中，增加了op_msg 协议，目前packetbeat 在msg统计的时候，没有输出msg内的内容
-protos/mongodb/mongodb_parser.go [opMsgParse函数]
-增加对返回的解析
+mongodb 在3.6版本中，增加了op_msg 协议，目前packetbeat 在msg统计的时候，没有输出msg内的内容。可在
+protos/mongodb/mongodb_parser.go [opMsgParse函数]增加对返回的解析即可解决该问题。
 
 ## 使用扩展
 项目主要为packetbeat+es
