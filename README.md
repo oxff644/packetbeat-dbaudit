@@ -132,8 +132,8 @@ packetbeat.protocols:
 - type: http
   # Configure the ports where to listen for HTTP traffic. You can disable
   # the HTTP protocol by commenting out the list of ports.
-  ports: [3389, 7001, 8088, 8080, 80, 443]
-  #enabled: false
+  # ports: [3389, 7001, 8088, 8080, 80, 443]
+  enabled: false
 
 - type: memcache
   # Configure the ports where to listen for memcache traffic. You can disable
