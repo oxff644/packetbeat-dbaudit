@@ -27,7 +27,7 @@ sysctl -p
 
 ```
 mkdir -p /data1/esauditdata && chmod -R 777 /data1/esauditdata
-https://github.com/oxff644/packetbeat-dbaudit.git
+git clone https://github.com/oxff644/packetbeat-dbaudit.git
 cd packetbeat-dbaudit
 docker-compose up -d
 ```
